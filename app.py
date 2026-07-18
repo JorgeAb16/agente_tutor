@@ -30,15 +30,15 @@ if st.button("Explicar tema", type="primary"):
         st.warning("Escribe un tema antes de continuar.")
     else:
         mensaje = f"""
-        Tema: {tema}
+        Tema a explicar: {tema}
         Nivel del estudiante: {nivel}
 
-        La respuesta debe contener:
-
-        1. Una explicación sencilla.
-        2. Un ejemplo práctico.
-        3. Una analogía, cuando sea útil.
-        4. Una pregunta de evaluación.
+        Genera una respuesta completa y específica sobre este tema para
+        este nivel, siguiendo exactamente la estructura, el formato y las
+        reglas de contenido que tienes definidas en tus instrucciones.
+        Evita explicaciones genéricas que servirían para cualquier tema de
+        IA: el ejemplo, la analogía y la pregunta deben estar claramente
+        conectados con "{tema}" en particular.
         """
 
         with st.spinner("El agente está preparando la explicación..."):
